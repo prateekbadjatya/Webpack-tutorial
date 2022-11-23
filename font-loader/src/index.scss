@@ -1,0 +1,14 @@
+.header {
+    text-decoration: underline;
+    color: aquamarine;
+    font-family: 'Rubik Microbe', cursive;
+}
+
+.button{
+    background-color: yellowgreen;
+}
+
+/* export particular style globally */
+// :global(.button) {
+//     background-color: yellowgreen;
+// }
