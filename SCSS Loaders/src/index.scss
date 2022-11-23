@@ -1,0 +1,13 @@
+#header {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+.button{
+    background-color: yellowgreen;
+}
+
+/* export particular style globally */
+// :global(.button) {
+//     background-color: yellowgreen;
+// }

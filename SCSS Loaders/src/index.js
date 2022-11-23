@@ -1,4 +1,4 @@
-import style from "./index.css";
+import style from "./index.scss";
 
 import "./ClearButton";
 import _ from "lodash";
@@ -23,7 +23,7 @@ document.getElementById("button1").addEventListener("click", function () {
   });
 });
 
-// btn1.classList.add(style.button)
+btn1.classList.add(style.button)
 //all the global styles reove from the style oobject
-btn1.classList.add(["button"])
+// btn1.classList.add(["button"])
 
