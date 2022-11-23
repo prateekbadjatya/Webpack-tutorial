@@ -8,7 +8,12 @@ element.onclick = function() {
     alert("Clear Clicked")
 }
 
-element.classList.add(style.button)
+// element.classList.add(style.button)
+
+
+//using global style
+element.classList.add(["button"])
+
  document.body.appendChild(element)
 
 
