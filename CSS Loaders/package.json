@@ -1,0 +1,29 @@
+{
+  "name": "gettingstarted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prateekbadjatya/Webpack-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prateekbadjatya/Webpack-tutorial/issues"
+  },
+  "homepage": "https://github.com/prateekbadjatya/Webpack-tutorial#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack-cli": "^5.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0"
+  }
+}

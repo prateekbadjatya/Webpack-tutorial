@@ -1,3 +1,4 @@
+import './index.css'
 import _ from 'lodash';
 document.getElementById("button1").addEventListener("click", function () {
     const element = document.getElementById("header");
