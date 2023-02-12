@@ -1,13 +1,15 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
 module.exports = {
   entry: {
     index: "./src/index.js",
     courses: "./src/pages/courses.js",
   },
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].[contenthash].js", //hashversion //help in browser caching 
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -58,5 +60,13 @@ module.exports = {
         },
       ],
     }),
+    //anaylze the bundle or optimize the bundle
+    new BundleAnalyzerPlugin({}),
   ],
+  optimization: {
+    //move shared library into common build
+    splitChunks: {
+      chunks: "all",
+    },
+  },
 };
