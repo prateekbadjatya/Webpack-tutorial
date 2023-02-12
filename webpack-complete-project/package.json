@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --mode development --open",
-    "build": "webpack --config webpack.config.js --mode development"
+    "dev": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "serve": "webpack serve --config webpack.dev.js --open"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "toastr": "^2.1.4",
     "typed.js": "^2.0.12",
     "validate.js": "^0.13.1",
@@ -21,12 +23,16 @@
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
+    "glob": "^8.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-bundle-analyzer": "^4.7.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
   }
 }
